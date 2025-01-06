@@ -5,12 +5,10 @@ JobRinger FreshLook is a modern job search platform built using **React**, a pop
 ---
 
 ## Features
-- **Job Search**: Search for jobs by keyword, location, and category.  
-- **Job Filtering**: Filter jobs by salary, experience, and industry.  
-- **Company Profiles**: View company profiles, including job openings and company information.  
-- **Job Applications**: Apply for jobs directly through the platform.  
-- **User Profiles**: Create and manage user profiles, including resume and job preferences.  
-
+- **Job Search**
+- **Job Filtering**  
+- **Company Profiles**  
+- **Job Applications**  
 ---
 
 ## Getting Started
