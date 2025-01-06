@@ -1,0 +1,84 @@
+/* Filter.css */
+:root {
+    --primary-color: #1a73e8; /* Blue */
+    --background-color: #1a1a2e; /* Light Gray */
+    --text-color: #FFFFFF; /* Dark Gray */
+    --hover-color: #c5d0df; /* Darker Blue */
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #1a1a2e;
+    border-bottom: 1px solid #1a1a2e;;
+}
+
+.filter-input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.filter-input:focus {
+    outline: none;
+    border-color: #00B4D8;
+    box-shadow: 0 0 10px rgba(0, 191, 228, 0.5);
+}
+
+.filter-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #1a1a2e;
+    background-color: #00B4D8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: #0A2647;
+    color: #FFFFFF;
+}
+
+.filter-btn:active {
+    transform: translateY(2px);
+}
+
+/* Animation */
+.filter-input, .filter-btn {
+    transition: all 0.3s ease;
+}
+
+.filter-input:focus, .filter-btn:hover {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Media Queries for Mobile Layout */
+@media (max-width: 768px) {
+    .filter {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .filter-input {
+        width: 100%;
+    }
+}

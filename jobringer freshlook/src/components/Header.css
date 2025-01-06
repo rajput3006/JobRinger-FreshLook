@@ -1,0 +1,160 @@
+/* Header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #0A2647; /* Navy Blue background */
+    color: #FFFFFF; /* White text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00B4D8; /* Teal for logo */
+    display: flex;
+    align-items: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.logo-text {
+    animation: bounce 2s infinite;
+}
+
+.logo-dot {
+    color: #00B4D8; /* Coral for the dot */
+    animation: blink 1.5s infinite;
+}
+
+/* Navigation Links */
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #FFFFFF; /* White for links */
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    background-color: #00B4D8; /* Teal background on hover */
+    color: #0A2647; /* Navy Blue text on hover */
+    transform: translateY(-3px);
+}
+
+/* Hamburger Menu for Mobile */
+.hamburger-menu {
+    display: none; /* Hidden by default */
+    cursor: pointer;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger-icon span {
+    width: 25px;
+    height: 3px;
+    background-color: #FFFFFF; /* White bars */
+    transition: all 0.3s ease;
+}
+
+.hamburger-icon.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Login Button */
+.login-button {
+    margin-left: auto;
+    display: block; /* Ensure login button is visible */
+}
+
+.login-button button {
+    text-decoration: none;
+    color: #FFFFFF; /* White text */
+    background-color: #00B4D8; /* Teal background */
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-button button:hover {
+    background-color: #0A2647; /* Navy blue background on hover */
+}
+
+/* Media Queries for Mobile Layout */
+@media (max-width: 768px) {
+    .header {
+        flex-wrap: wrap; /* Allow items to wrap in mobile layout */
+        padding: 0.5rem;
+    }
+
+    .nav-links {
+        display: none; /* Hide navigation links by default */
+    }
+
+    .nav-links.open {
+        display: block; /* Show navigation links when hamburger menu is clicked */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #0A2647; /* Navy Blue background */
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-links.open ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links.open li {
+        margin: 1rem 0;
+    }
+
+    .hamburger-menu {
+        display: block; /* Show hamburger menu in mobile layout */
+    }
+
+    .login-button {
+        margin-left: 0; /* Reset margin for mobile layout */
+        width: 100%; /* Full width for login button */
+        text-align: center; /* Center the login button */
+        padding: 0.5rem 0; /* Add padding for better spacing */
+    }
+
+    .login-button button {
+        width: 100%; /* Full width for login button */
+        padding: 0.75rem; /* Increase padding for better touch targets */
+    }
+}

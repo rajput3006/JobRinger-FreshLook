@@ -1,0 +1,96 @@
+/* JobCard.css */
+:root {
+    --primary-color: #00B4D8; /* Teal */
+    --background-color: #1a1a2e; /* Dark Blue */
+    --text-color: #FFFFFF; /* White */
+    --hover-color: #0A2647; /* Navy Blue */
+  }
+  
+  .job-card {
+    background: var(--background-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: var(--text-color);
+    
+  }
+  
+  .job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 191, 228, 0.3);
+  }
+  
+  .job-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+  }
+  
+  .job-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .social-icon {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: var(--hover-color);
+    transform: scale(1.2);
+  }
+  
+  .share-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .apply-button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .apply-button:hover {
+    background-color: var(--hover-color);
+    transform: translateY(-2px);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .job-card {
+      padding: 1rem;
+    }
+  
+    .job-card h3 {
+      font-size: 1.3rem;
+    }
+  
+    .job-card p {
+      font-size: 0.9rem;
+    }
+  
+    .social-icon {
+      font-size: 1.2rem;
+    }
+  }

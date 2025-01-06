@@ -1,0 +1,70 @@
+/* Color Palette */
+:root {
+    --primary-color: #1a73e8; /* Blue */
+    --background-color: #1a1a2e; /* Light Gray */
+    --text-color: #FFFFFF; /* Dark Gray */
+    --hover-color: #c5d0df; /* Darker Blue */
+}
+
+/* About Section Styling */
+.about {
+    padding: 4rem 2rem;
+    background-color: var(--background-color);
+    text-align: center;
+    color: var(--text-color);
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Hover Effect for Paragraph */
+.about p:hover {
+    color: var(--hover-color);
+    transition: color 0.3s ease-in-out;
+}
+
+/* Keyframe Animations */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about h2 {
+        font-size: 2rem;
+    }
+
+    .about p {
+        font-size: 1rem;
+    }
+}
