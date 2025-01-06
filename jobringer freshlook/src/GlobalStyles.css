@@ -1,0 +1,45 @@
+/* src/GlobalStyles.css */
+
+/* General Reset and Global Styling */
+* {
+                              margin: 0;
+                              padding: 0;
+                              box-sizing: border-box;
+                          }
+                          
+                          body {
+                              font-family: Arial, sans-serif;
+                              line-height: 1.6;
+                              background-color: #f4f4f9;
+                              color: #333;
+                          }
+                          
+                          .container {
+                              width: 90%;
+                              max-width: 1200px;
+                              margin: 0 auto;
+                          }
+                          
+                          /* Responsive Utility Classes */
+                          .text-center {
+                              text-align: center;
+                          }
+                          
+                          .flex {
+                              display: flex;
+                              justify-content: space-between;
+                              align-items: center;
+                          }
+                          
+                          .flex-column {
+                              flex-direction: column;
+                          }
+                          
+                          /* Media Queries */
+                          @media (max-width: 768px) {
+                              .flex {
+                                  flex-direction: column;
+                                  gap: 1rem;
+                              }
+                          }
+                          
